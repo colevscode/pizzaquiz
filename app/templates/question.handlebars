@@ -1,0 +1,15 @@
+<div class="frame">
+  <form>
+    <fieldset>
+      <legend>QUESTION {{count}}</legend>
+      <label>{{text}}</label>
+      {{#each options}}
+      <div><label>
+        <input type="radio" name="choices" value="{{@index}}"> {{this}}
+      </label></div>
+      {{/each}}
+      <button type="submit" class="btn btn-primary btn-large">submit</button>
+    </fieldset>
+  </form>
+</div>
+

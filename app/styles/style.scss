@@ -1,0 +1,78 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+@import "mixins";
+
+h1 {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  line-height: 1;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin-top: 15px;
+  color: #666;
+  line-height: 1;
+}
+
+.title {
+  position: relative;  
+  
+  img {
+    width: 100%;  
+  }
+
+  div {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom:0;
+
+    h1 {
+      font-size: 100px;
+      line-height: 1.2;
+    }    
+  }
+}
+
+@media (max-width: 500px) {
+  .title div h1 {
+    font-size: 50px;
+  }
+
+}
+
+
+@mixin frameFont {
+  font-size: 20px;
+  line-height: 1;  
+}
+
+.frame {
+  margin: 50px 0;
+  padding: 25px;
+  border: 1px solid #ccc;
+  @include radius(13px);
+  @include frameFont;
+
+  h1 {
+    margin-bottom: 25px;
+  }
+  button {
+    margin-top: 25px;
+  }
+  input {
+    @include frameFont;
+  }
+  label {
+    @include frameFont;
+  }
+}

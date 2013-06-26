@@ -1,0 +1,21 @@
+{"questions":[
+	{
+		"id": 1,
+		"text": "How often should you wash your hands after using the restroom?",
+		"options": [
+			"once",
+			"twice",
+			"three times"
+		],
+		"answer": 1
+	},
+	{
+		"id": 2,
+		"text": "When tossing a pizza, which direction should it rotate in the air?",
+		"options": [
+			"clockwise",
+			"counter clockwise"
+		],
+		"answer": 2
+	}
+]}
